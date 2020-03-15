@@ -23,6 +23,7 @@
   <modules>
     <module>spring-file-upload</module>
     <module>spring-messaging-rabbitmq</module>
+    <module>spring-data-mongo-repository</module>
   </modules>
 
   <dependencies>
