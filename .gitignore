@@ -1,0 +1,41 @@
+# build directories
+**/build
+**/dist
+**/target
+**/out
+
+# logs
+**/logs
+
+# gradle
+**/.gradle
+
+# idea
+**/.idea
+*.iws
+*.iml
+*.ipr
+
+# netbeans
+**/nbproject/private
+**/nbbuild
+**/nbdist
+**/.nb-gradle
+
+# node
+**/node_modules
+
+# spring
+**/HELP.md
+
+# sts/eclipse
+**/.apt_generated
+**/.classpath
+**/.factorypath
+**/.project
+**/.settings
+**/.springBeans
+**/.sts4-cache
+
+# vscode
+**/.vscode
