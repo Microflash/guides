@@ -1,0 +1,30 @@
+plugins {
+  id 'org.springframework.boot' version '2.2.6.RELEASE'
+  id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+  id 'java'
+}
+
+group = 'dev.mflash.guides'
+version = '0.0.1'
+sourceCompatibility = JavaVersion.VERSION_14
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  implementation('org.springframework.boot:spring-boot-starter-web')
+  implementation('org.springframework.boot:spring-boot-starter-data-jdbc')
+  implementation('io.micronaut.data:micronaut-data-spring:1.0.2') {
+    exclude(group: 'org.hibernate')
+  }
+  implementation('jakarta.persistence:jakarta.persistence-api')
+  runtimeOnly('org.postgresql:postgresql')
+  testImplementation('org.springframework.boot:spring-boot-starter-test') {
+    exclude(group: 'org.junit.vintage', module: 'junit-vintage-engine')
+  }
+}
+
+test {
+  useJUnitPlatform()
+}
