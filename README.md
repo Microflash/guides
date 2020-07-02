@@ -1,5 +1,6 @@
 # Spring guides
 
+- [API Documentation with springdoc-openapi (WebMvc)](./springdoc-webmvc-integration)
 - [Messaging with RabbitMQ and Spring Boot](./spring-messaging-rabbitmq)
 - [Persisting documents with MongoRepository](./spring-data-mongo-repository)
 - [Querying Postgres with Spring Data and Micronaut Data](./spring-data-micronaut-data)
