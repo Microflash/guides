@@ -1,17 +1,15 @@
-package dev.mflash.guides.jwtauth.configuration;
+package dev.mflash.guides.jwtauth.security;
 
-import dev.mflash.guides.jwtauth.configuration.security.JWTAuthenticationFilter;
-import dev.mflash.guides.jwtauth.configuration.security.JWTAuthorizationFilter;
-import dev.mflash.guides.jwtauth.configuration.security.TokenManager;
-import dev.mflash.guides.jwtauth.service.CustomUserDetailsService;
+import static dev.mflash.guides.jwtauth.controller.CustomUserController.REGISTRATION_URL;
+import static org.springframework.http.HttpMethod.POST;
+import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
+
 import org.springframework.context.annotation.Bean;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -26,19 +24,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     this.userDetailsService = userDetailsService;
   }
 
-  public @Bean PasswordEncoder passwordEncoder() {
-    return new BCryptPasswordEncoder();
-  }
-
   protected @Override void configure(HttpSecurity http) throws Exception {
     http.cors().and()
         .csrf().disable()
-        .authorizeRequests()
-          .antMatchers(HttpMethod.POST, TokenManager.SIGN_UP_URL).permitAll()
+        .authorizeRequests().antMatchers(POST, REGISTRATION_URL).permitAll()
         .anyRequest().authenticated().and()
-        .addFilter(new JWTAuthenticationFilter(authenticationManager()))
-        .addFilter(new JWTAuthorizationFilter(authenticationManager()))
-        .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        .addFilter(new CustomAuthenticationFilter(authenticationManager()))
+        .addFilter(new CustomAuthorizationFilter(authenticationManager()))
+        .sessionManagement().sessionCreationPolicy(STATELESS);
+  }
+
+  public @Bean PasswordEncoder passwordEncoder() {
+    return PasswordEncoderFactories.createDelegatingPasswordEncoder();
   }
 
   protected @Override void configure(AuthenticationManagerBuilder auth) throws Exception {

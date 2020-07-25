@@ -1,13 +1,13 @@
-CREATE TABLE custom_user (
+CREATE TABLE book (
 	id SERIAL PRIMARY KEY,
-	email TEXT,
-	name TEXT,
-	password TEXT
+	title TEXT NOT NULL,
+	author TEXT NOT NULL,
+	genre TEXT NOT NULL
 );
 
-CREATE TABLE note (
+CREATE TABLE custom_user (
 	id SERIAL PRIMARY KEY,
-	title TEXT,
-	content TEXT,
-	last_update TIMESTAMP WITH TIME ZONE DEFAULT (current_timestamp AT TIME ZONE 'UTC')
+	email TEXT NOT NULL,
+	name TEXT NOT NULL,
+	password TEXT NOT NULL
 );

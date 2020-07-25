@@ -1,13 +1,11 @@
 package dev.mflash.guides.jwtauth.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.data.annotation.Id;
 
-public @Entity class CustomUser {
+import java.util.StringJoiner;
 
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CustomUser {
+
   private @Id int id;
   private String email;
   private String name;
@@ -43,5 +41,14 @@ public @Entity class CustomUser {
 
   public void setPassword(String password) {
     this.password = password;
+  }
+
+  public @Override String toString() {
+    return new StringJoiner(", ", CustomUser.class.getSimpleName() + "[", "]")
+        .add("id=" + id)
+        .add("email='" + email + "'")
+        .add("name='" + name + "'")
+        .add("password='" + password + "'")
+        .toString();
   }
 }
