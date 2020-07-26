@@ -1,0 +1,13 @@
+CREATE TABLE book (
+	id SERIAL PRIMARY KEY,
+	title TEXT NOT NULL,
+	author TEXT NOT NULL,
+	genre TEXT NOT NULL
+);
+
+CREATE TABLE custom_user (
+	id SERIAL PRIMARY KEY,
+	email TEXT NOT NULL,
+	name TEXT NOT NULL,
+	password TEXT NOT NULL
+);

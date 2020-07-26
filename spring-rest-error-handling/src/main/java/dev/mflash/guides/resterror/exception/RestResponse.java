@@ -1,21 +1,15 @@
-package dev.mflash.guides.exception.handler;
+package dev.mflash.guides.resterror.exception;
 
 import java.time.LocalDateTime;
+import java.util.StringJoiner;
 
-public class RestMessage {
+public class RestResponse {
 
   private final LocalDateTime timestamp = LocalDateTime.now();
   private int status;
   private String error;
   private String message;
   private String path;
-
-  public RestMessage(int status, String error, String message, String path) {
-    this.status = status;
-    this.error = error;
-    this.message = message;
-    this.path = path;
-  }
 
   public LocalDateTime getTimestamp() {
     return timestamp;
@@ -51,5 +45,19 @@ public class RestMessage {
 
   public void setPath(String path) {
     this.path = path;
+  }
+
+  public static RestResponseBuilder builder() {
+    return new RestResponseBuilder();
+  }
+
+  public String toJson() {
+    return new StringJoiner(", ", "{", "}")
+        .add("\"timestamp\": \"" + timestamp + "\"")
+        .add("\"status\": " + status)
+        .add("\"error\": \"" + error + "\"")
+        .add("\"message\": \"" + message + "\"")
+        .add("\"path\": \"" + path + "\"")
+        .toString();
   }
 }
