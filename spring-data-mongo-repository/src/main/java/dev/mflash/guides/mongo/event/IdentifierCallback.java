@@ -1,4 +1,4 @@
-package dev.mflash.guides.mongo.helper.event;
+package dev.mflash.guides.mongo.event;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.util.ReflectionUtils;

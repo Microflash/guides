@@ -1,5 +1,6 @@
-package dev.mflash.guides.mongo.helper.event;
+package dev.mflash.guides.mongo.event;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.util.ReflectionUtils;
@@ -9,18 +10,13 @@ import java.lang.reflect.Field;
 import java.util.Collection;
 import java.util.Objects;
 
+@RequiredArgsConstructor
 public class CascadeSaveCallback implements FieldCallback {
 
   private final Object source;
   private final MongoOperations mongoOperations;
 
-  public CascadeSaveCallback(Object source, MongoOperations mongoOperations) {
-    this.source = source;
-    this.mongoOperations = mongoOperations;
-  }
-
-  public @Override void doWith(final Field field)
-      throws IllegalArgumentException, IllegalAccessException {
+  public @Override void doWith(final Field field) throws IllegalArgumentException, IllegalAccessException {
     ReflectionUtils.makeAccessible(field);
 
     if (field.isAnnotationPresent(DBRef.class) && field.isAnnotationPresent(Cascade.class)) {

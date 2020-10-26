@@ -1,4 +1,4 @@
-package dev.mflash.guides.mongo.helper.event;
+package dev.mflash.guides.mongo.event;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
