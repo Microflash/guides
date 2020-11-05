@@ -1,8 +1,6 @@
-package dev.mflash.guides.jwtauth.domain;
+package dev.mflash.guides.jwtauth.security;
 
 import org.springframework.data.annotation.Id;
-
-import java.util.StringJoiner;
 
 public class CustomUser {
 
@@ -44,11 +42,11 @@ public class CustomUser {
   }
 
   public @Override String toString() {
-    return new StringJoiner(", ", CustomUser.class.getSimpleName() + "[", "]")
-        .add("id=" + id)
-        .add("email='" + email + "'")
-        .add("name='" + name + "'")
-        .add("password='" + password + "'")
-        .toString();
+    return "CustomUser{" +
+        "id=" + id +
+        ", email='" + email + '\'' +
+        ", name='" + name + '\'' +
+        ", password='" + password + '\'' +
+        '}';
   }
 }

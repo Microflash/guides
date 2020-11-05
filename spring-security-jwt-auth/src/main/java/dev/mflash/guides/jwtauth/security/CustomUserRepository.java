@@ -1,6 +1,5 @@
-package dev.mflash.guides.jwtauth.persistence;
+package dev.mflash.guides.jwtauth.security;
 
-import dev.mflash.guides.jwtauth.domain.CustomUser;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

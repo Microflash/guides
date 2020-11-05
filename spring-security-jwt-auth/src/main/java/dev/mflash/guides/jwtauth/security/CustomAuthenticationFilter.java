@@ -3,7 +3,6 @@ package dev.mflash.guides.jwtauth.security;
 import static dev.mflash.guides.jwtauth.security.TokenManager.*;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dev.mflash.guides.jwtauth.domain.CustomUser;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;

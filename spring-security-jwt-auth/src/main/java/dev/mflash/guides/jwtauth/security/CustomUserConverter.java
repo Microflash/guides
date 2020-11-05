@@ -1,6 +1,5 @@
 package dev.mflash.guides.jwtauth.security;
 
-import dev.mflash.guides.jwtauth.domain.CustomUser;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.User;
 

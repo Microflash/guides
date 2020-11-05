@@ -1,6 +1,5 @@
 package dev.mflash.guides.jwtauth.security;
 
-import dev.mflash.guides.jwtauth.persistence.CustomUserRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
