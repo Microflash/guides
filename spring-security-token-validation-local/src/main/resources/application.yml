@@ -1,0 +1,9 @@
+auth:
+  audience: api://default
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-4273429.okta.com/oauth2/default

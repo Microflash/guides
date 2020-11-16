@@ -6,6 +6,7 @@
 - [Logging methods with AspectJ in a Spring application](./method-entry-exit-logging)
 - [Messaging with RabbitMQ and Spring Boot](./spring-messaging-rabbitmq)
 - [Persisting documents with MongoRepository](./spring-data-mongo-repository)
+- [Protecting endpoints with Spring Security Resource Server (Local token validation)](./spring-security-token-validation-local)
 - [Retrying on failure with Resilience4J and Aspects](./retry-on-failure)
 - [Querying Postgres with Spring Data and Micronaut Data](./spring-data-micronaut-data)
 - [Securing Spring Boot APIs with JWT Authentication](./spring-security-jwt-auth)
