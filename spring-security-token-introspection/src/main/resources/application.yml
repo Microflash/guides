@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaque-token:
+          introspection-uri: https://dev-4273429.okta.com/oauth2/default/v1/introspect
+          client-id: 0oarle1cZ7n7esoqO5d5
+          client-secret: i-HUDoMIm5SO7s22ejZzMb2qKHGb7HnMESx4NV2S
