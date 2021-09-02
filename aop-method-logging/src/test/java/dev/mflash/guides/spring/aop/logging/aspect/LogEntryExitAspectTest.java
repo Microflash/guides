@@ -20,7 +20,7 @@ class LogEntryExitAspectTest {
 
   @BeforeEach
   void setUp() {
-    greetingService = ServiceProxyProvider.getServiceProxy(GreetingService.class);
+    greetingService = (GreetingService) ServiceProxyProvider.getServiceProxy(new GreetingService());
 
     aspectAppender = new AspectAppender();
     aspectAppender.setContext(new LoggerContext());

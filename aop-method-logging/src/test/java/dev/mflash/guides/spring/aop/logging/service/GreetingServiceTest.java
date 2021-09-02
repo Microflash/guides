@@ -17,7 +17,7 @@ class GreetingServiceTest {
 
   @BeforeEach
   void setUp() {
-    greetingService = ServiceProxyProvider.getServiceProxy(GreetingService.class);
+    greetingService = (GreetingService) ServiceProxyProvider.getServiceProxy(new GreetingService());
   }
 
   @ParameterizedTest
