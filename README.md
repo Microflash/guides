@@ -7,6 +7,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 - [Working with AWS on local using LocalStack](./cloud/localstack-introduction/)
 
 ## Java
+- [Code Coverage with JaCoCo and Maven](./java/coverage-jacoco-maven/)
 - [Polymorphic Requests with Jackson](./java/jackson-polymorphic-requests/)
 
 ## Node.js
