@@ -11,6 +11,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 - [Polymorphic Requests with Jackson](./java/jackson-polymorphic-requests/)
 
 ## Node.js
+- [Logging on Node.js with winston](./nodejs/logging-with-winston/)
 
 ## Spring
 - [Messaging with RabbitMQ and Spring Boot](./spring/spring-messaging-rabbitmq/)

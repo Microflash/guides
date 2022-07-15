@@ -1,0 +1,24 @@
+{
+  "name": "logging-with-winston",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "rotating-file-stream": "^2.0.2",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/morgan": "^1.9.0",
+    "@types/node": "^13.9.1",
+    "typescript": "^3.8.3"
+  },
+  "license": "MIT"
+}
