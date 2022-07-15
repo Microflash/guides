@@ -15,6 +15,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 
 ## Spring
 - API Documentation with springdoc-openapi ([webmvc](./spring/springdoc-webmvc-integration/), [webmvcfn](./spring/springdoc-webmvcfn-integration/))
+- [API Documentation with Springfox 3](./spring/springfox3-webmvc-integration/)
 - [Error handling for a Spring-based REST API](./spring/spring-rest-error-handling/)
 - [Messaging with RabbitMQ and Spring Boot](./spring/spring-messaging-rabbitmq/)
 - [Querying Postgres with Spring Data and Micronaut Data](./spring/spring-data-micronaut-data/)
