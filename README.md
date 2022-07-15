@@ -20,6 +20,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 - [Logging methods with AspectJ in a Spring application](./spring/aop-method-logging/)
 - [Messaging with RabbitMQ and Spring Boot](./spring/spring-messaging-rabbitmq/)
 - [Querying Postgres with Spring Data and Micronaut Data](./spring/spring-data-micronaut-data/)
+- [Retrying on failure with Resilience4J and Aspects](./spring/retry-on-failure/)
 - [Securing Spring Boot APIs with JWT Authentication](./spring/spring-security-jwt-auth/)
 - [Uploading files with Spring Boot and Angular](./spring/spring-file-upload/)
 
