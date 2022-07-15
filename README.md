@@ -8,6 +8,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 
 ## Java
 - [Code Coverage with JaCoCo and Maven](./java/coverage-jacoco-maven/)
+- [Creating deep copies in Java](./java/deep-copying/)
 - [Java-based health check for Docker](./java/docker-healthcheck/)
 - [Polymorphic Requests with Jackson](./java/jackson-polymorphic-requests/)
 
