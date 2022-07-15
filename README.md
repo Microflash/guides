@@ -12,6 +12,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 
 ## Node.js
 - [Logging on Node.js with winston](./nodejs/logging-with-winston/)
+- [Request logging with morgan](./nodejs/morgan-request-logging/)
 - [Using Express with TypeScript](./nodejs/express-with-typescript/)
 
 ## Spring
