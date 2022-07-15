@@ -3,6 +3,7 @@
 Source code of the examples published on [mflash.dev](https://mflash.dev)
 
 ## Cloud
+- [Communicating with containers on Docker network](./cloud/communicating-with-containers-on-docker-network/)
 - [Working with AWS on local using LocalStack](./cloud/localstack-introduction/)
 
 ## Java

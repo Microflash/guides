@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: dev.mflash.guides.greeter
+---
+testFramework: junit
+sourceLanguage: java

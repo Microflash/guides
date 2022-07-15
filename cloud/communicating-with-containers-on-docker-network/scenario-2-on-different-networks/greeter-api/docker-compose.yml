@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  greeter-api:
+    image: mflash/greeter-api
+    networks:
+      - greeternet
+
+networks:
+  greeternet:
+    driver: bridge

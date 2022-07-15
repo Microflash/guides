@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  greeter-ui:
+    image: mflash/greeter-ui
+    networks:
+      - uinet
+    ports:
+      - 4200:4200
+
+networks:
+  uinet:
+    external:
+      name: greeter-api_greeternet

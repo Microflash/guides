@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: greeter-api
+  server:
+    port: 8084
+    cors:
+      enabled: true
+      configurations:
+        web:
+          allowedOrigins:
+            - http://0.0.0.0:4200
