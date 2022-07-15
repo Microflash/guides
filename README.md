@@ -13,6 +13,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 ## Node.js
 
 ## Spring
+- [Messaging with RabbitMQ and Spring Boot](./spring/spring-messaging-rabbitmq/)
 - [Uploading files with Spring Boot and Angular](./spring/spring-file-upload/)
 
 ## License
