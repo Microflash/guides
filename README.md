@@ -11,6 +11,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 - [Polymorphic Requests with Jackson](./java/jackson-polymorphic-requests/)
 
 ## Node.js
+- [Developing an API with Express and Postgres](./nodejs/express-postgres-api/)
 - [Linting with TypeScript ESLint](./nodejs/linting-with-typescript-eslint/)
 - [Logging on Node.js with log4js-node](./nodejs/logging-with-log4js-node/)
 - [Logging on Node.js with winston](./nodejs/logging-with-winston/)
