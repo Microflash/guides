@@ -15,6 +15,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 
 ## Spring
 - [Messaging with RabbitMQ and Spring Boot](./spring/spring-messaging-rabbitmq/)
+- [Querying Postgres with Spring Data and Micronaut Data](./spring/spring-data-micronaut-data/)
 - [Uploading files with Spring Boot and Angular](./spring/spring-file-upload/)
 
 ## License
