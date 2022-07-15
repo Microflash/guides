@@ -1,0 +1,1 @@
+> Refer to [Linting with TypeScript ESLint](https://mflash.dev/post/2019/08/16/linting-with-typescript-eslint/)
