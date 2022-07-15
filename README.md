@@ -30,6 +30,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 - [Retrying on failure with Resilience4J and Aspects](./spring/retry-on-failure/)
 - [Securing Spring Boot APIs with JWT Authentication](./spring/spring-security-jwt-auth/)
 - [Uploading files with Spring Boot and Angular](./spring/spring-file-upload/)
+- [Uploading files with Spring Boot and Express](./spring/springrx-file-upload/)
 
 ## License
 
