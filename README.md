@@ -11,6 +11,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 - [Creating deep copies in Java](./java/deep-copying/)
 - [Java-based health check for Docker](./java/docker-healthcheck/)
 - [Polymorphic Requests with Jackson](./java/jackson-polymorphic-requests/)
+- [Weaving aspects at compile-time with AspectJ](./java/aop-compile-time/)
 
 ## Node.js
 - [Developing an API with Express and Postgres](./nodejs/express-postgres-api/)
