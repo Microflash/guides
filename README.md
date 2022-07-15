@@ -12,6 +12,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 ## Node.js
 
 ## Spring
+- [Uploading files with Spring Boot and Angular](./spring/spring-file-upload/)
 
 ## License
 

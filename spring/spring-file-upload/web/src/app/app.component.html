@@ -1,0 +1,47 @@
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Uploader</h1>
+      <h2 class="subtitle">
+        <div class="form">
+          <div class="field file-control">
+            <div class="file">
+              <label class="file-label">
+                <input class="file-input" type="file" (change)="selectFile($event)" multiple>
+                <span class="file-cta">
+                  <span class="file-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                  </span>
+                  <span class="file-label">{{ label }}</span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary is-medium" [disabled]="!selected" (click)="upload()">Upload</button>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <progress *ngIf="progress.percentage > 0" class="progress" [ngClass]="status" [value]="progress.percentage" max="100">{{ progress.percentage }}%</progress>
+          </div>
+        </div>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero" *ngIf="!!uploadedFiles">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Uploaded files</h1>
+      <div class="content">
+        <ul>
+          <li *ngFor="let file of uploadedFiles">{{ file }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
