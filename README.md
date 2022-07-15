@@ -12,6 +12,7 @@ Source code of the examples published on [mflash.dev](https://mflash.dev)
 
 ## Node.js
 - [Logging on Node.js with winston](./nodejs/logging-with-winston/)
+- [Using Express with TypeScript](./nodejs/express-with-typescript/)
 
 ## Spring
 - API Documentation with springdoc-openapi ([webmvc](./spring/springdoc-webmvc-integration/), [webmvcfn](./spring/springdoc-webmvcfn-integration/))
