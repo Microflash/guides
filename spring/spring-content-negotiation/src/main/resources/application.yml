@@ -1,0 +1,5 @@
+spring:
+  mvc:
+    contentnegotiation:
+      favor-parameter: true
+      parameter-name: mediatype
