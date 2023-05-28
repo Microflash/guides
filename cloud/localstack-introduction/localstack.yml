@@ -2,7 +2,7 @@ version: '3'
 
 services:
   aws:
-    image: localstack/localstack:latest
+    image: localstack/localstack:2.1.0
     environment:
       DEBUG: 1
       LAMBDA_DOCKER_NETWORK: my-local-aws-network
