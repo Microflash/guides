@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - 5432
+    environment:
+      POSTGRES_USER: gwen
+      POSTGRES_PASSWORD: stacy
+      POSTGRES_DB: brooklyn

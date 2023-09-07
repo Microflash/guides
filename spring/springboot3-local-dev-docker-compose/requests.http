@@ -1,0 +1,11 @@
+# list all notes
+curl -s http://localhost:8080/notes
+
+# fetch a note by id
+curl -s http://localhost:8080/notes/32cb722e-3b3b-11ee-b854-0242ac140002
+
+# create new note
+curl -s -X POST http://localhost:8080/notes --json '{"title": "curl`s --json flag","body": "Use `--json` flag to avoid setting content-type and accept headers","readOnly": false}'
+
+# delete a note
+curl -s -X DELETE http://localhost:8080/notes/43f56686-3b3b-11ee-b854-0242ac140002
