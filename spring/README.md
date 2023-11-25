@@ -15,6 +15,7 @@ Source code of Spring and Spring Boot examples published on [naiyerasif.com](htt
 - [Persisting documents with MongoRepository](./spring-data-mongo-repository/)
 - Protecting endpoints with Spring Security Resource Server ([local validation](./spring-security-token-validation-local/), [introspection](./spring-security-token-introspection/), [hybrid validation](./spring-security-token-validation-hybrid/))
 - [Querying Postgres with Spring Data and Micronaut Data](./spring-data-micronaut-data/)
+- [Retrying on failure with Resilience4J and Aspects](./springboot3-aop-retry-on-failure/)
 - [Securing Spring Boot APIs with JWT Authentication](./spring-security-jwt-auth/)
 - [Uploading files with Spring Boot and Angular](./spring-file-upload/)
 - [Uploading files with Spring Boot and Express](./springrx-file-upload/)
@@ -24,4 +25,4 @@ Source code of Spring and Spring Boot examples published on [naiyerasif.com](htt
 ## Archived
 
 - [Logging methods with AspectJ in Spring Boot 2](../@archive/spring/springboot2-aop-method-logging/)
-- [Retrying on failure with Resilience4J and Aspects](../@archive/spring/springboot2-aop-retry-on-failure/)
+- [Retrying on failure with Resilience4J and Aspects using Sring Boot 2](../@archive/spring/springboot2-aop-retry-on-failure/)
