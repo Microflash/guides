@@ -2,6 +2,7 @@
 
 Source code of Spring and Spring Boot examples published on [naiyerasif.com](https://www.naiyerasif.com)
 
+- [API documentation with springdoc-openapi](./springboot3-springdoc-integration/)
 - [API Documentation with Springfox 3](./springfox3-webmvc-integration/)
 - [Content negotiation in Spring Boot](./spring-content-negotiation/)
 - [Detecting connection leaks with Hikari](./spring-data-jdbc-hikari-leak-detection/)
