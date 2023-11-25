@@ -2,7 +2,6 @@
 
 Source code of Spring and Spring Boot examples published on [naiyerasif.com](https://www.naiyerasif.com)
 
-- API Documentation with springdoc-openapi ([webmvc](./springdoc-webmvc-integration/), [webmvcfn](./springdoc-webmvcfn-integration/))
 - [API Documentation with Springfox 3](./springfox3-webmvc-integration/)
 - [Content negotiation in Spring Boot](./spring-content-negotiation/)
 - [Detecting connection leaks with Hikari](./spring-data-jdbc-hikari-leak-detection/)
@@ -24,5 +23,6 @@ Source code of Spring and Spring Boot examples published on [naiyerasif.com](htt
 
 ## Archived
 
+- API Documentation with springdoc-openapi ([webmvc](../@archive/spring/springboot2-springdoc-webmvc-integration/), [webmvcfn](../@archive/spring/springboot2-springdoc-webmvcfn-integration/))
 - [Logging methods with AspectJ in Spring Boot 2](../@archive/spring/springboot2-aop-method-logging/)
 - [Retrying on failure with Resilience4J and Aspects using Sring Boot 2](../@archive/spring/springboot2-aop-retry-on-failure/)
