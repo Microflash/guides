@@ -10,6 +10,7 @@ Source code of Spring and Spring Boot examples published on [naiyerasif.com](htt
 - [Error handling for Spring Security Resource Server](./spring-security-resource-server-error-handling/)
 - [Improved local development using Docker Compose in Spring Boot 3.1](./springboot3-local-dev-docker-compose/)
 - [Improved local development using Testcontainers in Spring Boot 3.1](./springboot3-local-dev-testcontainers/)
+- [Logging methods with AspectJ in a Spring application](./springboot3-aop-method-logging/)
 - [Messaging with RabbitMQ and Spring Boot](./spring-messaging-rabbitmq/)
 - [Persisting documents with MongoRepository](./spring-data-mongo-repository/)
 - Protecting endpoints with Spring Security Resource Server ([local validation](./spring-security-token-validation-local/), [introspection](./spring-security-token-introspection/), [hybrid validation](./spring-security-token-validation-hybrid/))
