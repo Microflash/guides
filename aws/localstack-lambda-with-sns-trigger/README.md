@@ -1,0 +1,1 @@
+> Refer to [Using LocalStack for AWS Lambda with SNS trigger](https://www.naiyerasif.com/post/2024/03/03/using-localstack-for-aws-lambda-with-sns-trigger/)
