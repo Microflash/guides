@@ -1,6 +1,4 @@
-package dev.mflash.guides.java.coverage.jacoco;
-
-import static org.assertj.core.api.Assertions.assertThat;
+package com.example;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,12 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 class FizzBuzzTest {
 
   @Test
   @DisplayName("Should get correct text via stream")
   void shouldGetCorrectTextViaStream() {
-    final List<String> texts = FizzBuzz.fizzBuzzViaStream(15).collect(Collectors.toList());
+    final List<String> texts = FizzBuzz.fizzBuzzViaStream(15).toList();
 
     assertThat(texts.get(2)).isEqualTo("Fizz");
     assertThat(texts.get(4)).isEqualTo("Buzz");

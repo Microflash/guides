@@ -1,8 +1,8 @@
-package dev.mflash.guides.java.coverage.jacoco;
+package com.example;
 
-public class PalindromeChecker {
+interface PalindromeChecker {
 
-  public static boolean isPalindrome(final String input) {
+  static boolean isPalindrome(final String input) {
     var forward = 0;
     var backward = input.length() - 1;
     var str = input.toLowerCase();
@@ -16,7 +16,7 @@ public class PalindromeChecker {
     return true;
   }
 
-  public static boolean isPalindrome(final int input) {
+  static boolean isPalindrome(final int input) {
     int MINUS = -1;
     return input < 0 ? isPalindrome(String.valueOf(input * MINUS))
         : isPalindrome(String.valueOf(input));

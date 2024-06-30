@@ -1,12 +1,12 @@
-package dev.mflash.guides.java.coverage.jacoco;
-
-import static org.assertj.core.api.Assertions.assertThat;
+package com.example;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 import java.math.BigDecimal;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class FactorialTest {
 

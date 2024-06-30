@@ -1,4 +1,4 @@
-package dev.mflash.guides.java.coverage.jacoco;
+package com.example;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class FizzBuzz {
+interface FizzBuzz {
 
-  public static Stream<String> fizzBuzzViaStream(int lim) {
+  static Stream<String> fizzBuzzViaStream(int lim) {
     return IntStream.rangeClosed(1, Math.abs(lim))
         .mapToObj(e -> e % 15 == 0 ? "FizzBuzz" : e % 3 == 0 ? "Fizz" : e % 5 == 0 ? "Buzz" : String.valueOf(e));
   }
 
-  public static List<String> fizzBuzzViaLoop(int lim) {
+  static List<String> fizzBuzzViaLoop(int lim) {
     var list = new ArrayList<String>();
     for (int i = 1; i <= Math.abs(lim); i++) {
       if (i % 15 == 0) {
@@ -29,7 +29,7 @@ public class FizzBuzz {
     return list;
   }
 
-  public static List<String> fizzBuzzViaRecursion(int lim, List<String> list) {
+  static List<String> fizzBuzzViaRecursion(int lim, List<String> list) {
     if (lim < 1) {
       Collections.reverse(list);
       return list;
