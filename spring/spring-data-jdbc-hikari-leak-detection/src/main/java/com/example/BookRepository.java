@@ -1,4 +1,4 @@
-package dev.mflash.guides.spring.hikari.leakdetection;
+package com.example;
 
 import org.springframework.data.repository.CrudRepository;
 
