@@ -1,9 +1,11 @@
-spring:
-  datasource:
-    url: jdbc:h2:mem:sa
-    username: sa
-    password: password
-    hikari:
-      pool-name: H2HikariPool
-      maximum-pool-size: 5
-      minimum-idle: 2
+spring.datasource:
+  url: jdbc:h2:mem:sa
+  hikari:
+    pool-name: H2HikariPool
+    maximum-pool-size: 5
+    minimum-idle: 2
+#    leak-detection-threshold: 30000
+
+#logging:
+#  level:
+#    com.zaxxer.hikari: TRACE
