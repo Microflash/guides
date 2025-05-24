@@ -1,10 +1,13 @@
 services:
   localstack:
     container_name: localstack-with-aws-cli
-    image: localstack/localstack:3
+    image: localstack/localstack:4.4.0
     ports:
       - "4566:4566"
     environment:
       - DEBUG=${DEBUG:-0}
+      # skips internet connections when working offline
+      - SKIP_SSL_CERT_DOWNLOAD=1
+      - DISABLE_EVENTS=1
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
