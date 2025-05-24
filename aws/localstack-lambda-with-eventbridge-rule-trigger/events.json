@@ -1,0 +1,8 @@
+[
+	{
+		"Source": "example-source",
+		"Detail": "{ \"Message\": \"Hello, Gwen\" }",
+		"DetailType": "Scheduled Event sent through EventBridge",
+		"EventBusName": "example-event-bus"
+	}
+]

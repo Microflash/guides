@@ -1,0 +1,14 @@
+services:
+  localstack:
+    container_name: localstack-lambda-with-eventbridge-rule-trigger
+    image: localstack/localstack:4.4.0
+    ports:
+      - "4566:4566"
+    environment:
+      - DEBUG=${DEBUG:-0}
+      # improve working completely offline
+      # see: https://github.com/localstack/localstack/issues/4840
+      - SKIP_SSL_CERT_DOWNLOAD=1
+      - DISABLE_EVENTS=1
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
