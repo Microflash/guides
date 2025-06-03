@@ -8,6 +8,7 @@ Source code of the examples published on [naiyerasif.com](https://www.naiyerasif
 - [Cloud](./cloud)
 - [Java](./java)
 - [Node.js](./nodejs)
+- [Python](./python)
 - [Spring](./spring)
 - [Miscellaneous](./miscellaneous)
 

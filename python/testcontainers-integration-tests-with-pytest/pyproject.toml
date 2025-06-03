@@ -1,0 +1,20 @@
+[project]
+name = "testcontainers-integration-tests-with-pytest"
+version = "0.0.1"
+description = "Integration tests using testcontainers and pytest"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.38.28",
+    "psycopg[binary]>=3.2.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+    "ruff>=0.11.12",
+    "testcontainers[localstack,postgres]>=4.10.0",
+]
+
+[tool.ruff]
+line-length = 120

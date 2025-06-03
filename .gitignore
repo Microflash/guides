@@ -28,6 +28,10 @@
 # node
 **/node_modules
 
+# python
+**/.venv
+**/__pycache__
+
 # spring
 **/HELP.md
 
