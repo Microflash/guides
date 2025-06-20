@@ -1,0 +1,6 @@
+jwt:
+  private-key: classpath:private.pem
+  public-key: classpath:public.pem
+
+spring.datasource:
+  url: jdbc:h2:mem:sa

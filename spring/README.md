@@ -18,6 +18,7 @@ Source code of Spring and Spring Boot examples published on [naiyerasif.com](htt
 - [Retrying on failure with Resilience4J and Aspects](./springboot3-aop-retry-on-failure/)
 - [Securing Spring Boot APIs with JWT Authentication](./spring-security-jwt-auth/)
 - [Securing Spring Boot APIs with JWT Authentication (with custom user)](./spring-security-jwt-auth-custom-user/)
+- [Securing Spring Boot APIs with JWT Authentication (using EdDSA)](./spring-security-jwt-auth-eddsa/)
 - [Uploading files with Spring Boot and Angular](./spring-file-upload/)
 - [Uploading files with Spring Boot and Express](./springrx-file-upload/)
 
