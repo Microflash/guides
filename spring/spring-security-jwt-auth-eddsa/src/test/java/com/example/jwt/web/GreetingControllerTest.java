@@ -9,7 +9,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.httpBasic;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -44,8 +43,7 @@ public class GreetingControllerTest {
 
 		this.mvc.perform(post(UserController.USER_ENDPOINT)
 						.contentType(MediaType.APPLICATION_JSON)
-						.content(userRegistrationRequest)
-						.with(csrf()))
+						.content(userRegistrationRequest))
 				.andExpect(status().isOk())
 				.andReturn();
 

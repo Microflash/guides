@@ -38,7 +38,7 @@ public class SecurityConfiguration {
 						.requestMatchers(UserController.USER_ENDPOINT).permitAll()
 						.anyRequest().authenticated()
 				)
-				.csrf((csrf) -> csrf.ignoringRequestMatchers(TokenController.TOKEN_ENDPOINT))
+				.csrf((csrf) -> csrf.ignoringRequestMatchers(TokenController.TOKEN_ENDPOINT, UserController.USER_ENDPOINT))
 				.httpBasic(Customizer.withDefaults())
 				.oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()))
 				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
