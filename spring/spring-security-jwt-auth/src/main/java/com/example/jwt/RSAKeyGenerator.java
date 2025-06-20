@@ -21,7 +21,7 @@ public class RSAKeyGenerator {
 	}
 
 	public static void main(String[] args) throws IOException {
-		var keyPair = generateKeyPair();
+		var keyPair = KEY_PAIR_GENERATOR.generateKeyPair();
 		writeKeyPair(keyPair, Paths.get("src/main/resources"));
 	}
 
@@ -30,13 +30,6 @@ public class RSAKeyGenerator {
 		Files.writeString(publicKeyPath, toPem("PUBLIC KEY", keyPair.getPublic().getEncoded()));
 		var privateKeyPath = Paths.get(parent.toString(), "private.pem");
 		Files.writeString(privateKeyPath, toPem("PRIVATE KEY", keyPair.getPrivate().getEncoded()));
-	}
-
-	static KeyPair generateKeyPair() {
-		KeyPair kp = KEY_PAIR_GENERATOR.generateKeyPair();
-		PublicKey publicKey = kp.getPublic();
-		PrivateKey privateKey = kp.getPrivate();
-		return new KeyPair(publicKey, privateKey);
 	}
 
 	static String toPem(String marker, byte[] encoded) {
