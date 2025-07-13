@@ -5,11 +5,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.*;
-import java.util.Base64;
 
 public class RSAKeyGenerator {
 
-	public static final KeyPairGenerator KEY_PAIR_GENERATOR;
+	static final KeyPairGenerator KEY_PAIR_GENERATOR;
+	static final PEMEncoder PEM_ENCODER = PEMEncoder.of();
 
 	static {
 		try {
@@ -27,13 +27,8 @@ public class RSAKeyGenerator {
 
 	static void writeKeyPair(KeyPair keyPair, Path parent) throws IOException {
 		var publicKeyPath = Paths.get(parent.toString(), "public.pem");
-		Files.writeString(publicKeyPath, toPem("PUBLIC KEY", keyPair.getPublic().getEncoded()));
+		Files.writeString(publicKeyPath, PEM_ENCODER.encodeToString(keyPair.getPublic()));
 		var privateKeyPath = Paths.get(parent.toString(), "private.pem");
-		Files.writeString(privateKeyPath, toPem("PRIVATE KEY", keyPair.getPrivate().getEncoded()));
-	}
-
-	static String toPem(String marker, byte[] encoded) {
-		String base64 = Base64.getMimeEncoder(64, "\n".getBytes()).encodeToString(encoded);
-		return "-----BEGIN " + marker + "-----\n" + base64 + "\n-----END " + marker + "-----";
+		Files.writeString(privateKeyPath, PEM_ENCODER.encodeToString(keyPair.getPrivate()));
 	}
 }
