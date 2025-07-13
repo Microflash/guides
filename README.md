@@ -7,6 +7,7 @@ Source code of the examples published on [naiyerasif.com](https://www.naiyerasif
 - [AWS](./aws/)
 - [Cloud](./cloud)
 - [Java](./java)
+- [Micronaut](./micronaut)
 - [Node.js](./nodejs)
 - [Python](./python)
 - [Spring](./spring)
